@@ -1,10 +1,10 @@
 import express from "express";
-import ApiRouters from './routers/ApiRouters.js'
 import { IdNotFound, Empty, CodeRepeat } from "./err/err.js";
+import { apiRouters } from "./routers/ApiRouters.js";
 
 const app = express();
 
-app.use('/api', ApiRouters)
+app.use('/api', apiRouters)
 
 app.use( (error, res) =>{
     switch(error.message) {

@@ -1,11 +1,11 @@
 import express, { Router } from 'express'
 import ProductManager from '../models/ProductManager.js'
 
-export const ProductsRouter = Router()
+export const productsRouter = Router()
 
 const ProductMng = new ProductManager('./data/products.json')
 
-ProductsRouter.get('/', async(req, res, next) =>{
+productsRouter.get('/', async(req, res, next) =>{
     if (req.query.limit){
         try{
             const {limit} = req.query
@@ -28,7 +28,7 @@ ProductsRouter.get('/', async(req, res, next) =>{
 }
 })
 
-ProductsRouter.get('/:id', async (res, req, next) => {
+productsRouter.get('/:id', async (res, req, next) => {
     try{
         const prod =await ProductMng.getProductsById(req.params.id)
         res.json(prod)
@@ -39,7 +39,7 @@ ProductsRouter.get('/:id', async (res, req, next) => {
     }
 })
 
-ProductsRouter.post('/', async (res, req, next) =>{
+productsRouter.post('/', async (res, req, next) =>{
     try{
         const newProd = await ProductMng.addProducts({...req.body})
         res.json(newProd)
@@ -50,7 +50,7 @@ ProductsRouter.post('/', async (res, req, next) =>{
     }
 })
 
-ProductsRouter.put('/:id', async (res, req, next) =>{
+productsRouter.put('/:id', async (res, req, next) =>{
     try{
         const updateProd = await ProductMng.updatProduct(req.params.id, {...req.body,})
         res.json(updateProd)
@@ -61,7 +61,7 @@ ProductsRouter.put('/:id', async (res, req, next) =>{
     }
 })
 
-ProductsRouter.delete('/:id', async (req, res , next) =>{
+productsRouter.delete('/:id', async (req, res , next) =>{
     try{
         const delProd = await ProductMng.deleteProductId(req.params.id)
         res.json({status:'deleted', payload:delProd})

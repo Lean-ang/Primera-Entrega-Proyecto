@@ -1,11 +1,13 @@
 import express,{ Router } from "express";
-import  CartRouter  from "./CarRouter.js";
-import  ProductsRouter  from "./ProductsRouter.js";
+import { cartRouter } from "./CartRouter.js";
+import { productsRouter } from "./ProductsRouter.js";
 
-export const ApiRouters = Router()
 
-ApiRouters.use(express.json())
-ApiRouters.use(express.urlencoded({extended: true}))
 
-ApiRouters.use('/products',ProductsRouter )
-ApiRouters.use('/carts',CartRouter)
+export const apiRouters = Router()
+
+apiRouters.use(express.json())
+apiRouters.use(express.urlencoded({extended: true}))
+
+apiRouters.use('/products',productsRouter)
+apiRouters.use('/carts',cartRouter)
