@@ -5,6 +5,8 @@ export const productsRouter = Router()
 
 const ProductMng = new ProductManager('./data/products.json')
 
+productsRouter.use(express.json())
+
 productsRouter.get('/', async(req, res, next) =>{
     if (req.query.limit){
         try{

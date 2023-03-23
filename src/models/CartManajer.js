@@ -42,11 +42,11 @@ export class CartManager{
 
     async getCartById(id){
         await this.#readCart()
-        const cart = this.#carts.find((cart)=> cart.id ===id)
+        const cart = this.#carts.find(cart => cart.id ===id)
         if(!cart){
             throw new Error(IdNotFound)
         }
-        return cart.products
+        return cart
     }
 
     async addProductCart(cid, pid){

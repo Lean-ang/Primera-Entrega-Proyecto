@@ -5,6 +5,8 @@ export const cartRouter = Router()
 
 const cartMng = new CartManager("./data/cart.json", "./data/products.json" )
 
+cartRouter.use(express.json())
+
 cartRouter.post("/", async(req,res) => {
     const newCart = await cartMng.createCart()    
     res.send({status:"succes", payload:newCart})
