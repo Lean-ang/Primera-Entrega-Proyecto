@@ -87,7 +87,7 @@ export default class ProductManager {
             throw new Error(IdNotFound)
         }
         this.#products[index] = newItem
-        await this.#writingSave()
+        this.#writingSave()
         return newItem
         
     }
@@ -99,7 +99,7 @@ export default class ProductManager {
             throw new Error(IdNotFound)
         }
         const [del] = this.#products.splice(index, 1)
-        await this.#readingJSON()
+        this.#readingJSON()
         return del      
     }
     

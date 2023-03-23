@@ -2,33 +2,10 @@
   {
     "title": "prueba put",
     "description": "cristal ultra resistente",
-    "code": "prueba-put",
-    "price": 2000,
-    "stock": 87
-  },
-  {
-    "id": "44e93f4b-b6f1-4546-953a-7dc693b830fd",
-    "title": "Vaso de cristal",
-    "description": "cristal ultra resistente",
-    "code": "prueba-2",
-    "price": 2000,
-    "stock": 87
-  },
-  {
-    "id": "262b890a-8ad7-4206-a2bf-336487af1bc6",
-    "title": "Vaso de cristal",
-    "description": "cristal ultra resistente",
-    "code": "prueba-3",
-    "price": 2000,
-    "stock": 87
-  },
-  {
-    "id": "d31bc6aa-52e3-4498-ab84-62de0fd257c8",
-    "title": "Vaso de cristal",
-    "description": "cristal ultra resistente",
     "code": "prueba-4",
     "price": 2000,
-    "stock": 87
+    "stock": 87,
+    "id": "d31bc6aa-52e3-4498-ab84-62de0fd257c8"
   },
   {
     "id": "9155e1dc-1d6d-4e95-a823-a237b334506b",

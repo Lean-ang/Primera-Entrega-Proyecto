@@ -12,6 +12,15 @@ cartRouter.post("/", async(req,res) => {
     res.send({status:"succes", payload:newCart})
   })
 
+cartRouter.get("/:id", async(req,res) => {
+  try {
+    const cart = await cartMng.getCartById(req.params.id)
+    res.send(cart)
+  } catch (error) {
+    res.status(404).json({message:error.message})
+  }    
+  }) 
+
 cartRouter.post("/:cid/product/:pid", async(req,res) => {
     try {
       const products = await cartMng.addProductCart(req.params.cid, req.params.pid)
@@ -21,11 +30,3 @@ cartRouter.post("/:cid/product/:pid", async(req,res) => {
     }
     
   })
-cartRouter.get("/:id", async(req,res) => {
-  try {
-    const cart = await cartMng.getCartById(req.params.id)
-    res.send(cart)
-  } catch (error) {
-    res.status(404).json({message:error.message})
-  }    
-  }) 
