@@ -70,7 +70,7 @@ export default class ProductManager {
           thumbnails,
           id,
         });
-        const product = this.#products.find((prod) => prod.code === newProduct.code)
+        const product = this.#products.find(prod => prod.code === newProduct.code)
         if (product) {
           throw new Error(CodeRepeat);
         }
