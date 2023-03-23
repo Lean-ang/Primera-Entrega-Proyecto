@@ -1,90 +1,81 @@
 [
- { 
-   "id":1,
-   "title":"Vaso de cristal",
-   "description":"cristal ultra resistente",
-   "price":2000,"thumbnail":"Not Found",
-   "code":"vasocristal",
-   "stock":87
-   
- },
- { 
-   "id":2, 
-   "title":"Vaso de cristal",
-   "description":"cristal ultra resistente",
-   "price":2000,"thumbnail":"Not Found",
-   "code":"vasocristal",
-   "stock":87
-   
- },
- { 
-   "id":3,
-   "title":"Vaso de cristal",
-   "description":"cristal ultra resistente",
-   "price":2000,"thumbnail":"Not Found",
-   "code":"vasocristal",
-   "stock":87
-   
- },
- { 
-   "id":4,
-   "title":"Vaso de cristal",
-   "description":"cristal ultra resistente",
-   "price":2000,"thumbnail":"Not Found",
-   "code":"vasocristal",
-   "stock":87
-   
- },
- { 
-   "id":5,  
-   "title":"Vaso de cristal",
-   "description":"cristal ultra resistente",
-   "price":2000,"thumbnail":"Not Found",
-   "code":"vasocristal",
-   "stock":87
-   
- },
- { 
-   "id":6,
-   "title":"Vaso de cristal",
-   "description":"cristal ultra resistente",
-   "price":2000,"thumbnail":"Not Found",
-   "code":"vasocristal",
-   "stock":87
-   
- },
- {
-   "id":7, 
-   "title":"Vaso de cristal",
-   "description":"cristal ultra resistente",
-   "price":2000,"thumbnail":"Not Found",
-   "code":"vasocristal",
-   "stock":87
-   
- },
- { 
-   "id":8,
-   "title":"Vaso de cristal",
-   "description":"cristal ultra resistente",
-   "price":2000,"thumbnail":"Not Found",
-   "code":"vasocristal",
-   "stock":87
-   
- },
- {
-   "id":9,
-   "title":"Vaso de cristal",
-   "description":"cristal ultra resistente",
-   "price":2000,"thumbnail":"Not Found",
-   "code":"vasocristal",
-   "stock":87
-   
- },{
-    "id":10,
-    "title":"Vaso de cristal",
-    "description":"cristal ultra resistente",
-    "price":2000,"thumbnail":"Not Found",
-    "code":"vasocristal",
-    "stock":87
-} 
+  {
+    "title": "prueba put",
+    "description": "cristal ultra resistente",
+    "code": "prueba-put",
+    "price": 2000,
+    "stock": 87
+  },
+  {
+    "id": "44e93f4b-b6f1-4546-953a-7dc693b830fd",
+    "title": "Vaso de cristal",
+    "description": "cristal ultra resistente",
+    "code": "prueba-2",
+    "price": 2000,
+    "stock": 87
+  },
+  {
+    "id": "262b890a-8ad7-4206-a2bf-336487af1bc6",
+    "title": "Vaso de cristal",
+    "description": "cristal ultra resistente",
+    "code": "prueba-3",
+    "price": 2000,
+    "stock": 87
+  },
+  {
+    "id": "d31bc6aa-52e3-4498-ab84-62de0fd257c8",
+    "title": "Vaso de cristal",
+    "description": "cristal ultra resistente",
+    "code": "prueba-4",
+    "price": 2000,
+    "stock": 87
+  },
+  {
+    "id": "9155e1dc-1d6d-4e95-a823-a237b334506b",
+    "title": "Vaso de cristal",
+    "description": "cristal ultra resistente",
+    "code": "prueba-5",
+    "price": 2000,
+    "stock": 87
+  },
+  {
+    "id": "bcc918f4-0fa7-488f-bb89-6368659f9f0c",
+    "title": "Vaso de cristal",
+    "description": "cristal ultra resistente",
+    "code": "prueba-6",
+    "price": 2000,
+    "stock": 87
+  },
+  {
+    "id": "d3e27422-9472-45dc-b05c-2bf4fe8ca18a",
+    "title": "Vaso de cristal",
+    "description": "cristal ultra resistente",
+    "code": "prueba-7",
+    "price": 2000,
+    "stock": 87
+  },
+  {
+    "id": "ac436296-5c7e-497c-bcca-7123925276da",
+    "title": "Vaso de cristal",
+    "description": "cristal ultra resistente",
+    "code": "prueba-8",
+    "price": 2000,
+    "stock": 87
+  },
+  {
+    "id": "e66db93d-2f5d-4ec5-ba92-5bb0f7260efe",
+    "title": "Vaso de cristal",
+    "description": "cristal ultra resistente",
+    "code": "prueba-9",
+    "price": 2000,
+    "stock": 87
+  },
+  {
+    "id": "8f2e7a98-6530-4332-b704-80d0f07cc250",
+    "title": "Vaso de cristal",
+    "description": "cristal ultra resistente",
+    "code": "prueba-10",
+    "price": 2000,
+    "stock": 87
+  }
 ]

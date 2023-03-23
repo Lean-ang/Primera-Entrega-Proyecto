@@ -30,7 +30,7 @@ productsRouter.get('/', async(req, res, next) =>{
 }
 })
 
-productsRouter.get('/:id', async (res, req, next) => {
+productsRouter.get('/:id', async (req, res, next) => {
     try{
         const prod =await ProductMng.getProductsById(req.params.id)
         res.json(prod)
@@ -41,9 +41,9 @@ productsRouter.get('/:id', async (res, req, next) => {
     }
 })
 
-productsRouter.post('/', async (res, req, next) =>{
+productsRouter.post('/', async (req, res, next) =>{
     try{
-        const newProd = await ProductMng.addProducts({...req.body})
+        const newProd = await ProductMng.createProduct({...req.body})
         res.json(newProd)
     }
     catch(error){
@@ -52,7 +52,7 @@ productsRouter.post('/', async (res, req, next) =>{
     }
 })
 
-productsRouter.put('/:id', async (res, req, next) =>{
+productsRouter.put('/:id', async (req, res, next) =>{
     try{
         const updateProd = await ProductMng.updatProduct(req.params.id, {...req.body,})
         res.json(updateProd)
